@@ -8,6 +8,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Custom Styles -->
+		<link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,21 +20,61 @@
     <![endif]-->
   </head>
   <body>
-		<h3>What I Do</h3>
-		<p>I am a Software Engineering student at Chippewa Valley Technical College. I work
-		in mental health by day and study computer science by night. Sometimes, I sleep.</p>
-    <h3>What I've Done</h3>
-		<ul>
-			<li>A 2D arcade-style game prototype using Unity and C#</li>
-			<li>Complete site mock-ups using HTML5 and CSS3</li>
-			<li>A flashcard web app using PHP</li>
-		</ul>
-		<h3>What I'm Doing</h3>
-		<ul>
-			<li>Porting the flashcard application to Laravel 4, a PHP framework</li>
-			<li>Learning database administration skills</li>
-			<li>Exploring .NET and Visual Basic</li>
-		</ul>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">What I Do</a></li>
+            <li><a href="">What I've Done</a></li>
+            <li><a href="">What I'm Doing</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div> <!-- end navbar -->
+		
+		<div class="wrapper">
+			<div class="jumbotron">
+					<h1>Samuel Bristol</h1>
+					<p>Student Developer</p>
+					<a class="btn btn-primary btn-lg" role="button" href="mailto:samuel.d.bristol@gmail.com">Email</a>
+					<a class="btn btn-primary btn-lg" role="button">More &raquo;</a>
+			</div>
+			
+			<div class="row">
+				<h3>What I Do</h3>
+				<p>I am a Software Engineering student at Chippewa Valley Technical College. I work
+					 in mental health by day and study computer science by night. Sometimes, I sleep.</p>
+			</div>
+			
+			<div class="row">
+				<h3>What I've Done</h3>
+				<ul>
+					<li>A 2D arcade-style game prototype using Unity and C#</li>
+					<li>Complete site mock-ups using HTML5 and CSS3</li>
+					<li>A flashcard web application using PHP</li>
+				</ul>
+			</div>
+			
+			<div class="row">
+				<h3>What I'm Doing</h3>
+				<ul>
+					<li>Porting FlashCardElite to Laravel 4, a PHP framework</li>
+					<li>Learning database administration skills</li>
+					<li>Exploring .NET and Visual Basic</li>
+				</ul>
+			</div>
+		</div> <!-- end wrapper -->
+    
+		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
